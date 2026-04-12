@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta
+      name="description"
+      content="Contact Fun Villa Restaurant - Pure Veg for table bookings, takeaway, and general enquiries."
+    />
+    <meta name="theme-color" content="#0f0b09" />
+    <title>Contact | Fun Villa Restaurant - Pure Veg</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script src="assets/js/site-data.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
+  </head>
+  <body data-page="contact">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header" data-site-header></header>
+
+    <main id="main-content">
+      <section class="page-hero">
+        <div class="container page-hero-inner">
+          <p class="eyebrow">Reservations and contact</p>
+          <h1>Ask about tables, takeaway, or your next visit</h1>
+          <p class="hero-text">
+            Call, send a WhatsApp message, or use the form below to ask about
+            dining, pickup, or group seating.
+          </p>
+        </div>
+      </section>
+
+      <section class="section section-dark">
+        <div class="container">
+          <div class="contact-grid" data-cards="contact"></div>
+        </div>
+      </section>
+
+      <section class="section section-soft">
+        <div class="container split-layout">
+          <article class="panel">
+            <p class="eyebrow">Reservation form</p>
+            <h2>Send a quick request to the restaurant</h2>
+            <form class="contact-form" data-contact-form>
+              <label>
+                Name
+                <input type="text" name="name" placeholder="Your name" required />
+              </label>
+
+              <label>
+                Phone number
+                <input type="tel" name="phone" placeholder="+91 ..." required />
+              </label>
+
+              <label>
+                Email
+                <input type="email" name="email" placeholder="name@example.com" required />
+              </label>
+
+              <label>
+                Preferred date and time
+                <input
+                  type="text"
+                  name="preferred_time"
+                  placeholder="Friday, 8:00 PM"
+                  required
+                />
+              </label>
+
+              <label>
+                Enquiry type
+                <select name="enquiry_type" data-subject-select required>
+                  <option value="">Choose an option</option>
+                </select>
+              </label>
+
+              <label>
+                Number of guests
+                <input type="text" name="guest_count" placeholder="2, 4, 8..." required />
+              </label>
+
+              <label>
+                Notes
+                <textarea
+                  name="message"
+                  rows="5"
+                  placeholder="Share any food preference, reservation note, or takeaway request."
+                  required
+                ></textarea>
+              </label>
+
+              <button class="button" type="submit" data-submit-button>
+                Send request
+              </button>
+              <p class="form-helper" data-form-helper></p>
+            </form>
+          </article>
+
+          <article class="panel accent-panel">
+            <p class="eyebrow">Visit or message</p>
+            <h2>Location and direct contact options</h2>
+            <p class="detail-line">
+              <strong>Address:</strong>
+              <span data-field="business.address"
+                >1st Floor, Anand Vihar Complex, Boring Road, Patna, Bihar 800001</span
+              >
+            </p>
+            <p class="detail-line">
+              <strong>Hours:</strong>
+              <span data-field="business.hours"
+                >Monday to Sunday, 12:00 PM to 10:45 PM</span
+              >
+            </p>
+            <p class="detail-line">
+              <strong>Phone:</strong>
+              <a data-link="phone"></a>
+            </p>
+            <p class="detail-line">
+              <strong>WhatsApp:</strong>
+              <a data-link="whatsapp"></a>
+            </p>
+            <p class="detail-line">
+              <strong>Email:</strong>
+              <a data-link="email"></a>
+            </p>
+            <a class="button button-secondary inline-button" data-link="map"
+              >Open location</a
+            >
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-darker">
+        <div class="container">
+          <div class="panel">
+            <p class="eyebrow">Before you book</p>
+            <h2>Helpful things to mention in your message</h2>
+            <div class="stack-list">
+              <div class="stack-item">
+                Share the day, time, and number of guests if you want a table held.
+              </div>
+              <div class="stack-item">
+                Mention if the booking is for a birthday dinner or small family gathering.
+              </div>
+              <div class="stack-item">
+                Ask about takeaway timing if you want food packed for pickup.
+              </div>
+              <div class="stack-item">
+                Mention vegetarian preferences or any dish you especially want to confirm.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" data-site-footer></footer>
+  </body>
+</html>
