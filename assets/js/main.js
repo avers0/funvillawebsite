@@ -267,9 +267,13 @@
       const items = Array.isArray(cat.items) ? cat.items : null;
       const bodyHtml = items
         ? `<ul class="menu-item-list">${items.map(function (it) {
-            return `<li>
-              <span class="item-name">${escapeHtml(it.name)}</span>
-              <span class="item-note">${escapeHtml(it.note || "")}</span>
+            const priceHtml = it.price ? `<span class="item-price" style="font-weight:600; color:var(--text); white-space:nowrap; margin-left: auto;">${escapeHtml(it.price)}</span>` : "";
+            return `<li style="display:flex; flex-wrap:nowrap; gap:1rem; align-items:baseline;">
+              <div style="flex: 0 1 auto; display:flex; flex-direction:column; gap:0.2rem;">
+                <span class="item-name">${escapeHtml(it.name)}</span>
+                <span class="item-note" style="text-align:left;">${escapeHtml(it.note || "")}</span>
+              </div>
+              ${priceHtml}
             </li>`;
           }).join("")}</ul>`
         : `<p style="color:var(--text-muted);font-size:0.9rem;margin:0">${escapeHtml(cat.description || "")}</p>`;

@@ -66,65 +66,65 @@ window.SITE_CONTENT = {
       title: "Paneer Specialities",
       category: "Main course · Signature",
       items: [
-        { name: "Paneer Butter Masala",  note: "Rich tomato gravy" },
-        { name: "Shahi Paneer",          note: "Creamy cashew base" },
-        { name: "Kadai Paneer",          note: "Bell pepper & spice" },
-        { name: "Palak Paneer",          note: "Spinach & cheese" },
-        { name: "Paneer Tikka Masala",   note: "Tandoor-smoked" }
+        { name: "Paneer Butter Masala", note: "Rich tomato gravy", price: "₹180" },
+        { name: "Shahi Paneer", note: "Creamy cashew base", price: "₹220" },
+        { name: "Kadai Paneer", note: "Bell pepper & spice", price: "₹250" },
+        { name: "Palak Paneer", note: "Spinach & cheese", price: "₹280" },
+        { name: "Paneer Tikka Masala", note: "Tandoor-smoked", price: "₹310" }
       ]
     },
     {
       title: "Dal & Vegetable Curries",
       category: "Main course · Everyday",
       items: [
-        { name: "Dal Tadka",             note: "Yellow lentils, tempering" },
-        { name: "Dal Makhani",           note: "Slow-cooked black lentils" },
-        { name: "Aloo Gobi",             note: "Potato & cauliflower" },
-        { name: "Mix Vegetable Curry",   note: "Seasonal vegetables" },
-        { name: "Chana Masala",          note: "Spiced chickpeas" }
+        { name: "Dal Tadka", note: "Yellow lentils, tempering", price: "₹350" },
+        { name: "Dal Makhani", note: "Slow-cooked black lentils", price: "₹180" },
+        { name: "Aloo Gobi", note: "Potato & cauliflower", price: "₹220" },
+        { name: "Mix Vegetable Curry", note: "Seasonal vegetables", price: "₹250" },
+        { name: "Chana Masala", note: "Spiced chickpeas", price: "₹280" }
       ]
     },
     {
       title: "Breads from the Tandoor",
       category: "Breads · Freshly baked",
       items: [
-        { name: "Naan",                  note: "Butter / Plain" },
-        { name: "Tandoori Roti",         note: "Whole wheat" },
-        { name: "Garlic Naan",           note: "House favourite" },
-        { name: "Stuffed Paratha",       note: "Aloo or paneer" },
-        { name: "Missi Roti",            note: "Gram flour flatbread" }
+        { name: "Naan", note: "Butter / Plain", price: "₹310" },
+        { name: "Tandoori Roti", note: "Whole wheat", price: "₹350" },
+        { name: "Garlic Naan", note: "House favourite", price: "₹180" },
+        { name: "Stuffed Paratha", note: "Aloo or paneer", price: "₹220" },
+        { name: "Missi Roti", note: "Gram flour flatbread", price: "₹250" }
       ]
     },
     {
       title: "Rice & Biryani",
       category: "Rice dishes · Hearty",
       items: [
-        { name: "Vegetable Biryani",     note: "Dum-cooked, fragrant" },
-        { name: "Paneer Biryani",        note: "Rich & filling" },
-        { name: "Steamed Basmati Rice",  note: "Plain or jeera" },
-        { name: "Pulao",                 note: "Lightly spiced" }
+        { name: "Vegetable Biryani", note: "Dum-cooked, fragrant", price: "₹280" },
+        { name: "Paneer Biryani", note: "Rich & filling", price: "₹310" },
+        { name: "Steamed Basmati Rice", note: "Plain or jeera", price: "₹350" },
+        { name: "Pulao", note: "Lightly spiced", price: "₹180" }
       ]
     },
     {
       title: "Starters & Snacks",
       category: "Starters · Tandoor",
       items: [
-        { name: "Paneer Tikka",          note: "Charred & smoky" },
-        { name: "Hara Bhara Kebab",      note: "Spinach & peas" },
-        { name: "Veg Seekh Kebab",       note: "Spiced & grilled" },
-        { name: "Samosa",                note: "Crispy, spiced filling" },
-        { name: "Onion Bhaji",           note: "Light & crunchy" }
+        { name: "Paneer Tikka", note: "Charred & smoky", price: "₹220" },
+        { name: "Hara Bhara Kebab", note: "Spinach & peas", price: "₹250" },
+        { name: "Veg Seekh Kebab", note: "Spiced & grilled", price: "₹280" },
+        { name: "Samosa", note: "Crispy, spiced filling", price: "₹310" },
+        { name: "Onion Bhaji", note: "Light & crunchy", price: "₹350" }
       ]
     },
     {
       title: "Desserts & Drinks",
       category: "Sweet endings · Beverages",
       items: [
-        { name: "Gulab Jamun",           note: "Warm, syrup-soaked" },
-        { name: "Kheer",                 note: "Rice pudding" },
-        { name: "Lassi",                 note: "Sweet or salted" },
-        { name: "Masala Chai",           note: "Spiced milk tea" },
-        { name: "Fresh Lime Soda",       note: "Sweet / salted" }
+        { name: "Gulab Jamun", note: "Warm, syrup-soaked", price: "₹180" },
+        { name: "Kheer", note: "Rice pudding", price: "₹220" },
+        { name: "Lassi", note: "Sweet or salted", price: "₹250" },
+        { name: "Masala Chai", note: "Spiced milk tea", price: "₹280" },
+        { name: "Fresh Lime Soda", note: "Sweet / salted", price: "₹310" }
       ]
     }
   ],
