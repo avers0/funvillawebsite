@@ -260,8 +260,8 @@ window.SITE_CONTENT = {
     formspreeEndpoint: "",
     mapUrl:
       "https://www.google.com/maps/search/?api=1&query=Dalli+Rajhara+Bhanupratappur+Rd,+Dondi,+Dalli+Rajhara,+Chhattisgarh,+491228",
-    githubRepo: "https://github.com/avers0/fun-villa-restaurant-pure-veg",
-    githubPages: "https://avers0.github.io/fun-villa-restaurant-pure-veg/"
+    githubRepo: "https://github.com/avers0/funvillawebsite.git",
+    githubPages: "https://avers0.github.io/funvillawebsite/"
   },
 
   submission: {
