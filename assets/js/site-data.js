@@ -13,7 +13,6 @@ window.SITE_CONTENT = {
       "Fun Villa Restaurant - Pure Veg is one of the more talked-about vegetarian dining spots in Dalli Rajhara. Guests who reviewed it publicly mentioned the interior, the garden with a pool, and the overall comfort of the place, making it feel more like a family outing restaurant than a quick stop.",
     phone: "+91 94241 31102",
     whatsapp: "+91 94241 31102",
-    email: "",
     address:
       "Dalli Rajhara Bhanupratappur Rd, Dondi, Dalli Rajhara, Chhattisgarh, India, 491228",
     hours: "Sunday 11:00 AM to 12:00 AM, Monday 11:00 AM to 7:00 PM, Tuesday to Saturday 11:00 AM to 12:00 AM",

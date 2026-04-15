@@ -159,8 +159,8 @@
               <a href="contact.html">Contact</a>
             </div>
             <div class="footer-contact">
-              <a href="${escapeHtml(isConfigured(business.phone) ? phoneHref(business.phone) : "#")}">${escapeHtml(phoneText)}</a>
-              <a href="${escapeHtml(isConfigured(business.email) ? emailHref(business.email) : "#")}">${escapeHtml(emailText)}</a>
+              ${isConfigured(business.phone) ? `<a href="${escapeHtml(phoneHref(business.phone))}">${escapeHtml(business.phone)}</a>` : ""}
+              ${isConfigured(business.whatsapp) ? `<a href="${escapeHtml(whatsappHref(business.whatsapp))}">WhatsApp Message</a>` : ""}
               <a href="${escapeHtml(mapHref)}" target="_blank" rel="noreferrer">Map&nbsp;/ Location</a>
             </div>
             <p style="font-size:0.78rem;color:var(--text-dim);margin-top:1.5rem;">
@@ -205,10 +205,6 @@
     document.querySelectorAll('[data-link="whatsapp"]').forEach(function (el) {
       setLink(el, business.whatsapp ? "WhatsApp: " + business.whatsapp : "[WhatsApp]",
         whatsappHref(business.whatsapp || ""), isConfigured(business.whatsapp));
-    });
-    document.querySelectorAll('[data-link="email"]').forEach(function (el) {
-      setLink(el, business.email || "Not listed publicly",
-        emailHref(business.email || ""), isConfigured(business.email));
     });
     document.querySelectorAll('[data-link="map"]').forEach(function (el) {
       setLink(el, "Open location", links.mapUrl || "#", isConfigured(links.mapUrl));
@@ -373,8 +369,6 @@
         href: isConfigured(business.phone) ? phoneHref(business.phone) : "#" },
       { title: "WhatsApp", body: business.whatsapp || "[WhatsApp Number]",
         href: isConfigured(business.whatsapp) ? whatsappHref(business.whatsapp) : "#" },
-      { title: "Email", body: business.email || "Not listed publicly",
-        href: isConfigured(business.email) ? emailHref(business.email) : "#" },
       { title: "Address", body: business.address || "[Full Address]",
         href: isConfigured(links.mapUrl) ? links.mapUrl : "#" }
     ];
@@ -432,7 +426,6 @@
       const fd = new FormData(form);
       const name          = fd.get("name")           || "";
       const phone         = fd.get("phone")          || "";
-      const email         = fd.get("email")          || "";
       const preferredTime = fd.get("preferred_time") || "";
       const enquiryType   = fd.get("enquiry_type")   || "";
       const guestCount    = fd.get("guest_count")    || "";
@@ -440,7 +433,7 @@
 
       const subjectLine = encodeURIComponent(`Reservation enquiry from ${name || "guest"}`);
       const body = encodeURIComponent([
-        `Name: ${name}`, `Phone: ${phone}`, `Email: ${email}`,
+        `Name: ${name}`, `Phone: ${phone}`,
         `Preferred date and time: ${preferredTime}`, `Enquiry type: ${enquiryType}`,
         `Guests: ${guestCount}`, "", "Message:", message
       ].join("\n"));
@@ -452,7 +445,7 @@
 
       const whatsappMessage = encodeURIComponent([
         "Hello Fun Villa Restaurant - Pure Veg,", "",
-        `Name: ${name}`, `Phone: ${phone}`, `Email: ${email}`,
+        `Name: ${name}`, `Phone: ${phone}`,
         `Preferred date and time: ${preferredTime}`, `Enquiry type: ${enquiryType}`,
         `Guests: ${guestCount}`, "", "Message:", message
       ].join("\n"));
