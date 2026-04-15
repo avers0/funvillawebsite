@@ -71,7 +71,7 @@ h1, h2, h3 {
   color: var(--text);
 }
 
-h1 { font-size: clamp(2.2rem, 5.5vw, 4.4rem); font-weight: 600; }
+h1 { font-size: clamp(1.9rem, 5.5vw, 4.4rem); font-weight: 600; }
 h2 { font-size: clamp(1.55rem, 3vw, 2.55rem); }
 h3 { font-size: 1.08rem; font-family: var(--font-sans); font-weight: 600; color: var(--text); }
 
@@ -137,7 +137,8 @@ h3 { font-size: 1.08rem; font-family: var(--font-sans); font-weight: 600; color:
   align-items: center;
   gap: 0.8rem;
   text-decoration: none;
-  flex-shrink: 0;
+  min-width: 0;
+  max-width: 100%;
 }
 
 .brand-logo {
@@ -276,11 +277,11 @@ h3 { font-size: 1.08rem; font-family: var(--font-sans); font-weight: 600; color:
 .section,
 .hero,
 .page-hero {
-  padding: clamp(4rem, 7vw, 6rem) 0;
+  padding: clamp(2.5rem, 7vw, 6rem) 0;
 }
 
-.hero-home  { padding-top: clamp(4.5rem, 8vw, 6.5rem); }
-.section-compact { padding-top: 0; padding-bottom: clamp(2rem, 4vw, 3rem); }
+.hero-home  { padding-top: clamp(2.5rem, 8vw, 6.5rem); }
+.section-compact { padding-top: 0; padding-bottom: clamp(1.5rem, 4vw, 3rem); }
 
 .section-soft {
   background: var(--surface-warm);
@@ -317,7 +318,7 @@ h3 { font-size: 1.08rem; font-family: var(--font-sans); font-weight: 600; color:
 }
 
 .hero-copy {
-  padding: clamp(2.5rem, 5vw, 4rem);
+  padding: clamp(1.5rem, 5vw, 4rem);
   border-radius: var(--r-xl);
   background: rgba(250,246,240,0.96);
   border: 1px solid var(--line);
@@ -500,7 +501,7 @@ h3 { font-size: 1.08rem; font-family: var(--font-sans); font-weight: 600; color:
    PANELS & CARDS
 ============================================================= */
 .panel {
-  padding: clamp(2rem, 4vw, 3.2rem);
+  padding: clamp(1.5rem, 4vw, 3.2rem);
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: var(--r-xl);
@@ -1014,11 +1015,11 @@ a[aria-disabled="true"] {
 .page-hero {
   background: var(--surface-warm);
   border-bottom: 1px solid var(--line);
-  padding-bottom: clamp(3rem, 6vw, 4.5rem);
+  padding-bottom: clamp(2rem, 6vw, 4.5rem);
 }
 
 .page-hero-inner {
-  padding: clamp(2.2rem, 4.5vw, 3rem);
+  padding: clamp(1.5rem, 4.5vw, 3rem);
   border-radius: var(--r-xl);
   background: var(--surface);
   border: 1px solid var(--line);
@@ -1108,6 +1109,7 @@ a[aria-disabled="true"] {
 @media (max-width: 620px) {
   .nav-toggle  { display: flex; }
   .nav-reserve { display: none; }
+  .brand-copy small { display: none; }
 
   .site-nav {
     /* Full-width dropdown using fixed positioning — immune to container margins */

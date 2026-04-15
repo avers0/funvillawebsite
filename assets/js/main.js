@@ -146,7 +146,7 @@
             <div class="brand" style="margin-bottom: 0.8rem;">
               <img src="assets/images/logo.png" alt="Fun Villa Logo" class="brand-logo">
               <span class="brand-copy">
-                <strong style="font-size: 1.1rem; color: var(--brand); font-family: var(--font-serif);">${escapeHtml(business.name || "[Business Name]")}</strong>
+                <strong style="font-size: 1.1rem; color: #fff; font-family: var(--font-serif); white-space: normal; line-height: 1.3;">${escapeHtml(business.name || "[Business Name]")}</strong>
               </span>
             </div>
             <p>${escapeHtml(business.intro || "")}</p>
