@@ -74,7 +74,6 @@
     header.innerHTML = `
       <div class="container header-inner">
         <a class="brand" href="index.html" aria-label="Go to home page">
-          <img src="assets/images/logo.png" alt="Fun Villa Logo" class="brand-logo">
           <span class="brand-copy">
             <strong>${escapeHtml(business.name || "[Business Name]")}</strong>
             <small>${escapeHtml(business.tagline || "Pure Veg · Dalli Rajhara")}</small>
@@ -144,7 +143,6 @@
           <div>
             <p class="eyebrow">Neighbourhood dining</p>
             <div class="brand" style="margin-bottom: 0.8rem;">
-              <img src="assets/images/logo.png" alt="Fun Villa Logo" class="brand-logo">
               <span class="brand-copy">
                 <strong style="font-size: 1.1rem; color: #fff; font-family: var(--font-serif); white-space: normal; line-height: 1.3;">${escapeHtml(business.name || "[Business Name]")}</strong>
               </span>
